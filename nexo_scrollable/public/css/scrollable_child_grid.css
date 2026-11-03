@@ -1,0 +1,104 @@
+.nexo-scrollable-child-grid {
+	position: relative;
+	overflow-x: auto !important;
+	overflow-y: hidden;
+	width: 100%;
+	scrollbar-width: auto;
+}
+
+.nexo-scrollable-child-grid > .form-grid {
+	position: static !important;
+	left: 0 !important;
+	width: max-content;
+	min-width: 100%;
+}
+
+.nexo-scrollable-child-grid .data-row.row {
+	flex-wrap: nowrap;
+}
+
+.nexo-scrollable-child-grid .row-check {
+	flex: 0 0 31px;
+	max-width: 31px;
+}
+
+.nexo-scrollable-child-grid .row-index {
+	flex: 0 0 40px;
+	max-width: 40px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-1 {
+	flex: 0 0 60px;
+	max-width: 60px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-2 {
+	flex: 0 0 90px;
+	max-width: 90px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-3 {
+	flex: 0 0 120px;
+	max-width: 120px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-4 {
+	flex: 0 0 150px;
+	max-width: 150px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-5 {
+	flex: 0 0 200px;
+	max-width: 200px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-6 {
+	flex: 0 0 250px;
+	max-width: 250px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-7 {
+	flex: 0 0 300px;
+	max-width: 300px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-8 {
+	flex: 0 0 350px;
+	max-width: 350px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-9 {
+	flex: 0 0 400px;
+	max-width: 400px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-10 {
+	flex: 0 0 450px;
+	max-width: 450px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-11 {
+	flex: 0 0 500px;
+	max-width: 500px;
+}
+
+.nexo-scrollable-child-grid .grid-static-col.col-xs-12 {
+	flex: 0 0 550px;
+	max-width: 550px;
+}
+
+.nexo-scrollable-child-grid .grid-row > .row > .col:last-child {
+	flex: 0 0 40px;
+	min-width: 40px;
+	max-width: 40px;
+}
+
+.nexo-scrollable-child-grid:has(.grid-row.grid-row-open) {
+	overflow-x: clip !important;
+	overflow-y: visible;
+}
+
+.nexo-scrollable-child-grid:has(.grid-row.grid-row-open) > .form-grid {
+	width: 100%;
+	min-width: 0;
+}

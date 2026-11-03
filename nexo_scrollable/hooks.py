@@ -25,7 +25,7 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/nexo_scrollable/css/nexo_scrollable.css"
+app_include_css = "/assets/nexo_scrollable/css/scrollable_child_grid.css"
 # app_include_js = "/assets/nexo_scrollable/js/nexo_scrollable.js"
 
 # include js, css files in header of web template
@@ -43,7 +43,37 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+# These are the ERPNext v15 DocTypes whose standard child table field is `items`.
+scrollable_items_grid_script = "public/js/scrollable_items_grid.js"
+doctype_js = {
+	"BOM": scrollable_items_grid_script,
+	"BOM Creator": scrollable_items_grid_script,
+	"Blanket Order": scrollable_items_grid_script,
+	"Delivery Note": scrollable_items_grid_script,
+	"Installation Note": scrollable_items_grid_script,
+	"Job Card": scrollable_items_grid_script,
+	"Landed Cost Voucher": scrollable_items_grid_script,
+	"Maintenance Schedule": scrollable_items_grid_script,
+	"Material Request": scrollable_items_grid_script,
+	"Opportunity": scrollable_items_grid_script,
+	"POS Invoice": scrollable_items_grid_script,
+	"Packing Slip": scrollable_items_grid_script,
+	"Pricing Rule": scrollable_items_grid_script,
+	"Product Bundle": scrollable_items_grid_script,
+	"Promotional Scheme": scrollable_items_grid_script,
+	"Purchase Invoice": scrollable_items_grid_script,
+	"Purchase Order": scrollable_items_grid_script,
+	"Purchase Receipt": scrollable_items_grid_script,
+	"Quotation": scrollable_items_grid_script,
+	"Request for Quotation": scrollable_items_grid_script,
+	"Sales Invoice": scrollable_items_grid_script,
+	"Sales Order": scrollable_items_grid_script,
+	"Stock Entry": scrollable_items_grid_script,
+	"Stock Reconciliation": scrollable_items_grid_script,
+	"Subcontracting Order": scrollable_items_grid_script,
+	"Subcontracting Receipt": scrollable_items_grid_script,
+	"Supplier Quotation": scrollable_items_grid_script,
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -246,4 +276,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-
